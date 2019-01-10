@@ -13,11 +13,6 @@ namespace PlayCade.Views
         public MainView()
         {
             InitializeComponent();
-
-            var viewModel = new MainViewViewModel();
-            viewModel.LabelText = "Hello from ViewModel";
-
-            BindingContext = viewModel;
         }
     }
 }
