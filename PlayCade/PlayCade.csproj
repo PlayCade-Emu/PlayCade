@@ -11,9 +11,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="3.2.0.871581" />
+    <PackageReference Include="Xamarin.Forms" Version="3.4.0.1009999" />
     <PackageReference Include="Autofac" Version="4.8.1" />
     <PackageReference Include="Autofac.Extras.CommonServiceLocator" Version="5.0.0" />
+    <PackageReference Include="PlayCade.Common" Version="0.1.0-CI-20190110-052902" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Remove="PlayCade\Views\MainView.xaml" />
@@ -22,6 +23,10 @@
     <Folder Include="Containers\" />
     <Folder Include="ViewModels\" />
     <Folder Include="Views\" />
+    <Folder Include="Utilities\" />
+    <Folder Include="Interfaces\" />
+    <Folder Include="ViewModels\Base\" />
+    <Folder Include="Services\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Views\MainView.xaml.cs" />

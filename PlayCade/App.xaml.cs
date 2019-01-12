@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Threading.Tasks;
+using PlayCade.Containers;
+using PlayCade.Interfaces;
 using PlayCade.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -12,7 +15,15 @@ namespace PlayCade
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            AppContainer.Initialize();
+
+            InitializeNavigation();
+        }
+
+        private async Task InitializeNavigation()
+        {
+            var navigationService = AppContainer.Resolve<INavigationService>();
+            await navigationService.InitializeAsync();
         }
 
         protected override void OnStart()
