@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms" 
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+            x:Class="PlayCade.Views.LayoutView"
+            xmlns:utility="clr-namespace:PlayCade.Utilities"
+            xmlns:tv="clr-namespace:PlayCade.Views"
+            utility:ViewModelLocator.AutoWireViewModel="True"
+            BarBackgroundColor="#2196F3"
+            BarTextColor="White">
+    <TabbedPage.Children>
+        <tv:GameView />
+        <tv:SettingsView />
+    </TabbedPage.Children>
+</TabbedPage>

@@ -24,7 +24,7 @@ namespace PlayCade.Services
 
         public async Task InitializeAsync()
         {
-            await NavigateToAsync<MainViewModel>();
+            await NavigateToAsync<LayoutViewModel>();
         }
 
         public async Task ClearBackStack()
@@ -34,7 +34,7 @@ namespace PlayCade.Services
 
         public async Task NavigateBackAsync()
         {
-            if (CurrentApplication.MainPage is MainView mainPage)
+            if (CurrentApplication.MainPage is LayoutView mainPage)
             {
                 await mainPage.Navigation.PopAsync();
             }
@@ -46,7 +46,7 @@ namespace PlayCade.Services
 
         public virtual Task RemoveLastFromBackStackAsync()
         {
-            if (CurrentApplication.MainPage is MainView mainPage)
+            if (CurrentApplication.MainPage is LayoutView mainPage)
             {
                 mainPage.Navigation.RemovePage(
                     mainPage.Navigation.NavigationStack[mainPage.Navigation.NavigationStack.Count - 2]);
@@ -57,7 +57,7 @@ namespace PlayCade.Services
 
         public async Task PopToRootAsync()
         {
-            if (CurrentApplication.MainPage is MainView mainPage)
+            if (CurrentApplication.MainPage is LayoutView mainPage)
             {
                 await mainPage.Navigation.PopToRootAsync();
             }
@@ -156,8 +156,9 @@ namespace PlayCade.Services
 
         private void CreatePageViewModelMappings()
         {
-        
-            _mappings.Add(typeof(MainViewModel), typeof(MainView));
+            _mappings.Add(typeof(LayoutViewModel), typeof(LayoutView));
+            _mappings.Add(typeof(GameViewModel), typeof(GameView));
+            _mappings.Add(typeof(SettingsViewModel), typeof(SettingsView));
         }
     }
 }

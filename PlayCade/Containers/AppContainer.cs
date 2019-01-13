@@ -15,7 +15,9 @@ namespace PlayCade.Containers
             var builder = new ContainerBuilder();
 
             // ViewModels
-            builder.RegisterType<MainViewModel>();
+            builder.RegisterType<LayoutViewModel>();
+            builder.RegisterType<GameViewModel>();
+            builder.RegisterType<SettingsViewModel>();
 
             //Services
             builder.RegisterType<NavigationService>().As<INavigationService>();
