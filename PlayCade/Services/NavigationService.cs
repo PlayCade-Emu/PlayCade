@@ -88,44 +88,26 @@ namespace PlayCade.Services
             var page = CreatePage(viewModelType, parameter);
 
             CurrentApplication.MainPage = page;
-            //if (page is MainView)
-            //{
-            //    CurrentApplication.MainPage = page;
-            //}
-            //else if (CurrentApplication.MainPage is MainView)
-            //{
-            //    var mainPage = CurrentApplication.MainPage as MainView;
 
+            if(page is LayoutView)
+            {
+                CurrentApplication.MainPage = page;
 
+                var mainPage = CurrentApplication.MainPage as LayoutView;
 
-            //    //if (mainPage is BethanyNavigationPage navigationPage)
-            //    //{
-            //    //    var currentPage = navigationPage.CurrentPage;
+                if(mainPage.Children.Count == 0)
+                {
+                    mainPage.Children.Add(new NavigationPage(new GameView()) { Title = "Games" });
+                    mainPage.Children.Add(new NavigationPage(new SettingsView()) { Title = "Settings" });
+                }
+            }
+            else if (CurrentApplication.MainPage is LayoutView)
+            {
+                var layoutPage = CurrentApplication.MainPage as LayoutView;
 
-            //    //    if (currentPage.GetType() != page.GetType())
-            //    //    {
-            //    //        await navigationPage.PushAsync(page);
-            //    //    }
-            //    //}
-            //    //else
-            //    //{
-            //        //navigationPage = new BethanyNavigationPage(page);
-            //        //mainPage = navigationPage;
-            //    //}
-            //}
-            //else
-            //{
-                ////var navigationPage = CurrentApplication.MainPage as BethanyNavigationPage;
+                await layoutPage.CurrentPage.Navigation.PushAsync(page);
+            }
 
-                ////if (navigationPage != null)
-                ////{
-                ////    await navigationPage.PushAsync(page);
-                ////}
-                ////else
-                ////{
-                ////    CurrentApplication.MainPage = new BethanyNavigationPage(page);
-                ////}
-            //}
 
             await (page.BindingContext as ViewModelBase).InitializeAsync(parameter);
         }

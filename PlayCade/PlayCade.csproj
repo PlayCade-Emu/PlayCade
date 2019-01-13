@@ -24,6 +24,7 @@
     <Folder Include="Interfaces\" />
     <Folder Include="ViewModels\Base\" />
     <Folder Include="Services\" />
+    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="ViewModels\MainViewModel.cs" />

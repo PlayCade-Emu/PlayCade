@@ -4,9 +4,7 @@
              x:Class="PlayCade.Views.GameView"
              xmlns:utility="clr-namespace:PlayCade.Utilities"
              utility:ViewModelLocator.AutoWireViewModel="True"
-             Title="Games">
+             Title="PlayCade">
     
-    <Label Text="{Binding ContentText}"
-           HorizontalOptions="Center"
-           VerticalOptions="Start" />
+    <ListView ItemsSource="{Binding GamesList}"/>
 </ContentPage>
