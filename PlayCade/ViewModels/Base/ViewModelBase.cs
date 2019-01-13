@@ -1,11 +1,12 @@
 ﻿using System;
 using System.ComponentModel;
+using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 using PlayCade.Interfaces;
 
 namespace PlayCade.ViewModels.Base
 {
-    public class ViewModelBase
+    public class ViewModelBase: INotifyPropertyChanged
     {
         public ViewModelBase()
         {
@@ -44,6 +45,12 @@ namespace PlayCade.ViewModels.Base
             return Task.FromResult(false);
         }
 
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
     }
 }
 

@@ -10,7 +10,6 @@ using Xamarin.Forms.Xaml;
 
 namespace PlayCade.Views
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MainView : ContentPage
     {
         public MainView()

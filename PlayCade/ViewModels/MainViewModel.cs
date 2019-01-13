@@ -7,16 +7,11 @@ namespace PlayCade.ViewModels
 {
     public class MainViewModel: ViewModelBase
     {
-        public string LabelText { get; set; }
+        public string LabelText { get; set; } = "Welcome to PlayCade!";
 
         public MainViewModel(INavigationService navigationService) : base(navigationService)
         {
            
-        }
-
-        public override async Task InitializeAsync(object data)
-        {
-            LabelText = "Welcome to PlayCade!";
         }
     }
 }

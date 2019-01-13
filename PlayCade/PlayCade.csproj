@@ -17,9 +17,6 @@
     <PackageReference Include="PlayCade.Common" Version="0.1.0-CI-20190110-052902" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Remove="PlayCade\Views\MainView.xaml" />
-  </ItemGroup>
-  <ItemGroup>
     <Folder Include="Containers\" />
     <Folder Include="ViewModels\" />
     <Folder Include="Views\" />
@@ -27,8 +24,5 @@
     <Folder Include="Interfaces\" />
     <Folder Include="ViewModels\Base\" />
     <Folder Include="Services\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Remove="Views\MainView.xaml.cs" />
   </ItemGroup>
 </Project>
