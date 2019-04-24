@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayCade.iOS", "PlayCade.iO
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayCade", "PlayCade\PlayCade.csproj", "{FD5BCC54-A24F-4756-91CA-3CAEF99016BE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayCade.MacOS", "PlayCade.MacOS\PlayCade.MacOS.csproj", "{28975140-E38D-420C-8E8B-043888FF75A5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,5 +55,17 @@ Global
 		{FD5BCC54-A24F-4756-91CA-3CAEF99016BE}.Debug|iPhone.Build.0 = Debug|Any CPU
 		{FD5BCC54-A24F-4756-91CA-3CAEF99016BE}.Release|iPhone.ActiveCfg = Release|Any CPU
 		{FD5BCC54-A24F-4756-91CA-3CAEF99016BE}.Release|iPhone.Build.0 = Release|Any CPU
+		{28975140-E38D-420C-8E8B-043888FF75A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28975140-E38D-420C-8E8B-043888FF75A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28975140-E38D-420C-8E8B-043888FF75A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28975140-E38D-420C-8E8B-043888FF75A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28975140-E38D-420C-8E8B-043888FF75A5}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{28975140-E38D-420C-8E8B-043888FF75A5}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{28975140-E38D-420C-8E8B-043888FF75A5}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{28975140-E38D-420C-8E8B-043888FF75A5}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{28975140-E38D-420C-8E8B-043888FF75A5}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{28975140-E38D-420C-8E8B-043888FF75A5}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{28975140-E38D-420C-8E8B-043888FF75A5}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{28975140-E38D-420C-8E8B-043888FF75A5}.Release|iPhone.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
