@@ -7,7 +7,7 @@
     <ProjectTypeGuids>{A3F8F2AB-B479-4A4A-A458-A89E7DC349F1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Exe</OutputType>
     <RootNamespace>PlayCade.MacOS</RootNamespace>
-    <AssemblyName>PlayCade</AssemblyName>
+    <AssemblyName>PlayCade.MacOS</AssemblyName>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <TargetFrameworkIdentifier>Xamarin.Mac</TargetFrameworkIdentifier>
     <MonoMacResourcePrefix>Resources</MonoMacResourcePrefix>
@@ -30,6 +30,7 @@
     <UseSGen>true</UseSGen>
     <UseRefCounting>true</UseRefCounting>
     <PlatformTarget>x86</PlatformTarget>
+    <MtouchLink>None</MtouchLink>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
     <DebugType>pdbonly</DebugType>
@@ -47,6 +48,10 @@
     <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PlayCade.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\packages\PlayCade.Common.1.0.0-CI-20191226234149\lib\netstandard2.1\PlayCade.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="PlayCade.Core.Chip8, Version=0.0.1.0, Culture=neutral, PublicKeyToken=null">
       <HintPath>..\packages\PlayCade.Core.Chip-8.0.0.1-CI-20191226084432\lib\netstandard2.1\PlayCade.Core.Chip8.dll</HintPath>
       <Private>True</Private>
@@ -76,6 +81,12 @@
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Main.storyboard" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PlayCade\PlayCade.csproj">
+      <Project>{baad3b36-20ba-4576-a9e7-81356858ec85}</Project>
+      <Name>PlayCade</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Mac\Xamarin.Mac.CSharp.targets" />
 </Project>

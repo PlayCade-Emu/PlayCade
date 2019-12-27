@@ -1,6 +1,9 @@
 ﻿using System;
 using AppKit;
 using Foundation;
+using PlayCade.Managers;
+using PlayCade.Core.Chip8;
+using PlayCade.Core.Chip8.Emu;
 
 namespace PlayCade.MacOS
 {
@@ -13,6 +16,9 @@ namespace PlayCade.MacOS
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
+
+            var manager = new CoreManager();
+            manager.AvailableCores();
 
             // Do any additional setup after loading the view.
         }
