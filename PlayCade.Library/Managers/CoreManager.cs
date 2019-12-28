@@ -1,12 +1,8 @@
-using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Reflection;
 using PlayCade.Common.Interfaces;
 using PlayCade.Core.Chip8;
 
-namespace PlayCade.Managers
+namespace PlayCade.Library.Managers
 {
     public class CoreManager
     {

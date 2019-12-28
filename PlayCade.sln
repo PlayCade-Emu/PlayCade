@@ -1,7 +1,7 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayCade", "PlayCade\PlayCade.csproj", "{BAAD3B36-20BA-4576-A9E7-81356858EC85}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayCade.Library", "PlayCade.Library\PlayCade.Library.csproj", "{BAAD3B36-20BA-4576-A9E7-81356858EC85}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayCade.MacOS", "PlayCade.MacOS\PlayCade.MacOS.csproj", "{842433E4-2A4C-4C26-AEBC-E2411AFD0997}"
 EndProject
