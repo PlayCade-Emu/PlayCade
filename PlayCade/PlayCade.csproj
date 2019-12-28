@@ -7,7 +7,13 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="PlayCade.Common" Version="1.0.0-CI-20191226234149" />
+      <PackageReference Include="PlayCade.Common" Version="1.0.0-CI-20191228013124" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="PlayCade.Core.Chip8, Version=0.0.1.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>..\..\_Temporary\Cores\PlayCade.Core.Chip8.dll</HintPath>
+      </Reference>
     </ItemGroup>
 
 </Project>

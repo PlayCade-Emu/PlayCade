@@ -137,5 +137,11 @@
   <ItemGroup>
     <Content Include="Entitlements.plist" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PlayCade\PlayCade.csproj">
+      <Project>{baad3b36-20ba-4576-a9e7-81356858ec85}</Project>
+      <Name>PlayCade</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

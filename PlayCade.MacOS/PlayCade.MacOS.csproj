@@ -31,6 +31,7 @@
     <UseRefCounting>true</UseRefCounting>
     <PlatformTarget>x86</PlatformTarget>
     <MtouchLink>None</MtouchLink>
+    <MonoBundlingExtraArgs>-v -v -v -v</MonoBundlingExtraArgs>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
     <DebugType>pdbonly</DebugType>
@@ -49,7 +50,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="PlayCade.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>..\packages\PlayCade.Common.1.0.0-CI-20191226234149\lib\netstandard2.1\PlayCade.Common.dll</HintPath>
+      <HintPath>..\packages\PlayCade.Common.1.0.0-CI-20191228013124\lib\netstandard2.1\PlayCade.Common.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="PlayCade.Core.Chip8, Version=0.0.1.0, Culture=neutral, PublicKeyToken=null">
@@ -87,6 +88,12 @@
       <Project>{baad3b36-20ba-4576-a9e7-81356858ec85}</Project>
       <Name>PlayCade</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\..\_Temporary\Cores\PlayCade.Core.Chip8.dll">
+      <Link>Cores/PlayCade.Core.Chip8.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Mac\Xamarin.Mac.CSharp.targets" />
 </Project>

@@ -1,28 +1,23 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Reflection;
 using PlayCade.Common.Interfaces;
+using PlayCade.Core.Chip8;
 
 namespace PlayCade.Managers
 {
     public class CoreManager
     {
      
-        public void AvailableCores()
+        public List<ICore> AvailableCores()
         {
-            foreach (var assembly in AppDomain.CurrentDomain.GetAssemblies())
-            {
-                Console.WriteLine($"Assembly {assembly.GetName().Name}");
-
-                var types = assembly.GetTypes()
-                    .Where(y => typeof(ICore).IsAssignableFrom(y));
-
-                foreach (var type in types)
-                {
-                    Console.WriteLine($"Type: {type.Name}");
-                }
-            }
+            List<ICore> availableCores = new List<ICore>();
+            
+            availableCores.Add(new Chip8Core());
+            
+            return availableCores;
         }
     }
 }
