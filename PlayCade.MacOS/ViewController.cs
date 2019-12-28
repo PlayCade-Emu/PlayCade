@@ -1,6 +1,7 @@
 ﻿using System;
 using AppKit;
 using Foundation;
+using PlayCade.Managers;
 
 namespace PlayCade.MacOS
 {
