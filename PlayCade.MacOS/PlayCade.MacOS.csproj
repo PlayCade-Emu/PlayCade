@@ -63,6 +63,18 @@
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\PlayCade_Icon.appiconset\PlayCade_Icon_256.png" />
+    <ImageAsset Include="Assets.xcassets\PlayCade_Icon.appiconset\PlayCade_Icon_256%402x.png" />
+    <ImageAsset Include="Assets.xcassets\PlayCade_Icon.appiconset\.DS_Store" />
+    <ImageAsset Include="Assets.xcassets\PlayCade_Icon.appiconset\PlayCade_Icon_128%402x.png" />
+    <ImageAsset Include="Assets.xcassets\PlayCade_Icon.appiconset\PlayCade_Icon_16%402x.png" />
+    <ImageAsset Include="Assets.xcassets\PlayCade_Icon.appiconset\PlayCade_Icon_32%402x.png" />
+    <ImageAsset Include="Assets.xcassets\PlayCade_Icon.appiconset\PlayCade_Icon_16.png" />
+    <ImageAsset Include="Assets.xcassets\PlayCade_Icon.appiconset\PlayCade_Icon_32.png" />
+    <ImageAsset Include="Assets.xcassets\PlayCade_Icon.appiconset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\PlayCade_Icon.appiconset\PlayCade_Icon_512%402x.png" />
+    <ImageAsset Include="Assets.xcassets\PlayCade_Icon.appiconset\PlayCade_Icon_128.png" />
+    <ImageAsset Include="Assets.xcassets\PlayCade_Icon.appiconset\PlayCade_Icon_512.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
