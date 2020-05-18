@@ -60,6 +60,10 @@
         <CodesignKey>iPhone Developer</CodesignKey>
     </PropertyGroup>
     <ItemGroup>
+        <Compile Include="AddFolderViewController.cs" />
+        <Compile Include="AddFolderViewController.designer.cs">
+          <DependentUpon>AddFolderViewController.cs</DependentUpon>
+        </Compile>
         <Compile Include="Main.cs" />
         <Compile Include="AppDelegate.cs" />
         <InterfaceDefinition Include="Main.storyboard" />
