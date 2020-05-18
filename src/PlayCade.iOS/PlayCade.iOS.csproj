@@ -69,6 +69,20 @@
           <DependentUpon>MainViewController.cs</DependentUpon>
         </Compile>
         <Compile Include="Properties\AssemblyInfo.cs" />
+        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\PlayCade_Icon_iPadApp_76.png" />
+        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\PlayCade_Icon_iPadApp_76@2x.png" />
+        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\PlayCade_Icon_iPadProApp_83.5@2x.png" />
+        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\PlayCade_Icon_iPadSettings_29@2x.png" />
+        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\PlayCade_Icon_iPadSpotlight_40.png" />
+        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\PlayCade_Icon_iPadSpotlight_40@2x.png" />
+        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\PlayCade_Icon_iPhoneApp_60@2x.png" />
+        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\PlayCade_Icon_iPhoneApp_60@3x.png" />
+        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\PlayCade_Icon_iPhoneSettings_29.png" />
+        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\PlayCade_Icon_iPhoneSettings_29@2x.png" />
+        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\PlayCade_Icon_iPhoneSettings_29@3x.png" />
+        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\PlayCade_Icon_iPhoneSpotlight_40@2x.png" />
+        <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\PlayCade_Icon_iPhoneSpotlight_40@3x.png" />
+        <Content Include="Assets.xcassets\Contents.json" />
         <Content Include="Entitlements.plist" />
         <InterfaceDefinition Include="LaunchScreen.storyboard" />
     </ItemGroup>
