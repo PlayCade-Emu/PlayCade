@@ -1,26 +1,20 @@
 ﻿using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
+using Android.App;
 
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("PlayCade.iOS")]
+[assembly: AssemblyTitle("PlayCade.Android")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("PlayCade.iOS")]
-[assembly: AssemblyCopyright("Copyright ©  2020")]
-[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCompany("CompanyName")]
+[assembly: AssemblyProduct("PlayCade.Android")]
+[assembly: AssemblyCopyright("Copyright © CompanyName Year")]
+[assembly: AssemblyTrademark("CompanyTrademark")]
 [assembly: AssemblyCulture("")]
-
-// Setting ComVisible to false makes the types in this assembly not visible 
-// to COM components.  If you need to access a type in this assembly from 
-// COM, set the ComVisible attribute to true on that type.
 [assembly: ComVisible(false)]
-
-// The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("CFC30C71-AD5F-47B7-9D44-382F72C4E5B5")]
 
 // Version information for an assembly consists of the following four values:
 //
